@@ -448,7 +448,6 @@ body {
 }
 
 .about-text {
-  flex: 1; /* Ensures that the text takes the remaining space */
   font-size: 16px; /* Adjust the text size */
   line-height: 1.6; /* Add line spacing for better readability */
 }
