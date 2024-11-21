@@ -6,46 +6,39 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-     <script>
-        function showmenu() {
-            const menu = document.getElementById("menushow");
-            menu.classList.toggle("show");  // Toggle visibility using class
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("show");
         }
-
-     </script>
+    </script>
 </head>
 <body>
     <!-- Navbar -->
-    <div class="mnav">
-        <button class="dropdown-btn" onclick="showmenu()">☰ Menu</button>
-            <div class="menu" id="menushow">
-                <div><a href="#home">Home</a></div>
-                <div><a href="#about">About</a></div>
-                <div><a href="#skill">Skills</a></div>
-                <div><a href="#projects">Projects</a></div>
-                <div><a href="#experience">Experience</a></div>
-                <div><a href="#contact">Contact</a></div>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+
+                <div class="logo">
+                    <a href="#home">Portfolio</a>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <ul id="mobile-menu" class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </div>
-
-
-    <nav>
-       <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    
-    </nav>
-
+        </nav>
+    </header>
+    <div class="bodys">
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="home-content">
             <h1>Hello, I'm Ashwin</h1>
-            <br>
             <p>Software Developer | Web Enthusiast | Quick Learner</p>
             <a href="#about" class="btn">Explore More</a>
         </div>
@@ -56,37 +49,28 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="profile-photo">
-                <img src="p/ash.jpg" alt="Profile Photo">
+                <img src="p/ash.jpg" alt="Ashwin's Profile Photo">
             </div>
             <div class="about-text">
-                <p>Hi, I'm ASHWIN, a passionate web developer with a keen interest in creating dynamic and user-friendly websites. With experience in HTML, CSS, JavaScript, and more, I strive to build solutions that not only meet but exceed client expectations.</p>
+                <p>Hi, I'm Ashwin, a dedicated web developer with a strong passion for creating dynamic and user-friendly websites. Proficient in HTML, CSS, JavaScript, and other modern web technologies, I focus on delivering innovative solutions that not only meet but exceed client expectations."</p>
             </div>
+            
         </div>
+        
     </section>
+    
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-            <div class="skills-section" id="skill">
-                <div class="skill-item">
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill-item">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill-item">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-item">
-                    <h3>React</h3>
-                </div>
-                <div class="skill-item">
-                    <h3>Node.js</h3>
-                </div>
-                <div class="skill-item">
-                    <h3>SQL</h3>
-                </div>
-                   </div>
+        <div class="skills-grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">SQL</div>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -156,7 +140,7 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <form action="your-form-handler.php" method="post">
+        <form action="your-form-handler.php" method="post"><br><br><br>
             <input type="text" name="name" placeholder="Your Name" required><br>
             <input type="email" name="email" placeholder="Your Email" required><br>
             <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
@@ -166,11 +150,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>Connect with me on <a href=" linkedin.com/in/ruganashwinv-893457h" target="_blank">LinkedIn</a></p>
-         <p>
-        <a rel="https://github.com/RUGANASH78" target="_blank">GitHub</a>
-        </p>
-        <p>Connect with me on <a href="linkedin.com/in/ruganashwinv-893457h" target="_blank">LinkedIn</a> and <a href="https://github.com/RUGANASH78" target="_blank">GitHub</a> </p>
-     </footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/ruganashwinv-893457h/" target="_blank">LinkedIn</a> and <a href="https://github.com/RUGANASH78" target="_blank">GitHub</a>.</p>
+    </footer>
+</div>
 </body>
 </html>
