@@ -140,7 +140,14 @@ body {
   object-fit: cover; /* Ensures the image fits nicely within the circle */
 }
 
+<<<<<<< HEAD
 
+=======
+.about-text {
+  font-size: 16px; /* Adjust the text size */
+  line-height: 1.6; /* Add line spacing for better readability */
+}
+>>>>>>> e8abf6bb1d71c062ea6ebcc60309f977f8e0a54b
 
 /* Skills Section */
 #skills {
