@@ -377,6 +377,7 @@ footer {
  .about-content {
      grid-template-columns: 1fr; /* Stack content vertically */
     gap: 10px;
+    height: 400px;
   }
 
   .about-text, .profile-photo  { 
