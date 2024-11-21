@@ -139,11 +139,12 @@ body {
   padding: 2rem;
 }
 .profile-photo {
+  height: 150px;
   margin: auto;
-  padding: auto;
- display: block;
- align-items: center;
- gap: 0px;
+  padding: 0px;
+  display: block;
+  align-items: center;
+  gap: 0px;
   grid-column: 1/2;
 }
 
@@ -710,12 +711,12 @@ footer a{
   .about-content {
     grid-template-columns: 1fr; /* Stack content vertically */
     gap: 10px;
-    height: 450px;
+    height: 500px;
   }
 
   .profile-photo img {
     max-width: 150px;
-    margin: 0 auto;
+    margin:  auto;
   }
   .about-text p{
     display: block;
