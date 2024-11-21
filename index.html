@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
         function toggleMenu() {
-            const menu = document.getElementById("mobile-menu");
-            menu.classList.toggle("show");
+           // JavaScript
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const links = document.querySelectorAll('.nav-links a');
+
+            // Toggle the navigation menu
+            menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            });
+
+            // Hide the navigation menu after clicking a link
+            links.forEach((link) => {
+            link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+            });
+         });
         }
     </script>
 </head>
