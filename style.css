@@ -491,17 +491,12 @@ footer a{
     height: 40px;
   }
   .foot {
-    
-  
+    justify-content: center;
     display: flex;
     align-items: center;
-    
-   
-   
   }
   .foot p{
     text-indent: 5px;
-    margin:20px ;
     display: flex;
     align-items: center;
     
