@@ -377,7 +377,7 @@ footer {
  .about-content {
      grid-template-columns: 1fr; /* Stack content vertically */
     gap: 10px;
-    height: 400px;
+    height: 450px;
   }
 
   .about-text, .profile-photo  { 
@@ -685,7 +685,7 @@ footer {
   .about-content {
     grid-template-columns: 1fr; /* Stack content vertically */
     gap: 10px;
-    height: 400px;
+    height: 450px;
   }
 
   .profile-photo img {
